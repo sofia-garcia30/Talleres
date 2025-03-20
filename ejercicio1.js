@@ -1,7 +1,8 @@
-let edad = parseInt(prompt("Ingrese su edad"))
+let rectangulo = parseInt(prompt("Ingrese el area del rectangulo"))
 
-if (edad >= 18) {
-    alert(`Eres mayor de edad.`); }
-    
-    else {
-    alert(`Eres menor de edad.`); }
+function calcularAreaRectangulo(base, altura) {
+    return base * altura;
+}
+
+let area = calcularAreaRectangulo(5, 10);
+alert(`El área del rectángulo es: ${area}`);

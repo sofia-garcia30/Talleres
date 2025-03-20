@@ -1,8 +1,10 @@
-let n = parseInt(prompt("Ingrese un número N:")); // Pedimos un número al usuario
-let sumaCuadrados = 0; // Aquí guardamos la suma de los cuadrados
-
-for (let i = 1; i <= n; i++) { // Desde 1 hasta N
-    sumaCuadrados += i * i; // Calculamos el cuadrado y lo sumamos
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
 }
 
-console.log("La suma de los cuadrados de los números del 1 al " + n + " es: " + sumaCuadrados);
+function fahrenheitToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5/9;
+}
+
+console.log(`25°C a Fahrenheit: ${celsiusToFahrenheit(25)}°F`);  // 77°F
+console.log(`77°F a Celsius: ${fahrenheitToCelsius(77)}°C`);    // 25°C

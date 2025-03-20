@@ -1,11 +1,10 @@
-let arreglo = [ 
-    ["a", "z", "t"], 
-    [789, 887, 451], 
-    [true, false, 0] 
-];
-
-for (let i = 0; i < arreglo.length; i++) { 
-    for (let j = 0; j < arreglo[i].length; j++) { 
-        console.log(arreglo[i][j]); 
+function calcularFactorial(n) {
+    let factorial = 1;
+    for (let i = 1; i <= n; i++) {
+        factorial *= i; 
     }
+    return factorial;
 }
+
+let resultado = calcularFactorial(5);
+console.log("El factorial de 5 es:", resultado); 

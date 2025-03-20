@@ -1,11 +1,8 @@
-let producto = prompt("Introduce un producto: lentejas, crema, arroz, vino");
+let cubo = parseInt(prompt("Ingrese el cubo"))
 
-producto = producto.toLowerCase();
-
-if (producto === "lentejas" || producto === "arroz") {
-alert(` no paga IVA.`);
-} else if (producto === "vino" || producto === "crema") {
-alert(`paga IVA`);
-} else {
-alert("Producto no reconocido.");
+function calcularVolumenCubo(lado) {
+    return lado ** lado; 
 }
+
+let volumen = calcularVolumenCubo(4);
+alert(`El volumen del cubo es: ${volumen}`);

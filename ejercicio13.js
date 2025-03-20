@@ -1,8 +1,13 @@
-let n = parseInt(prompt("Ingrese un número N:")); // Pedimos un número al usuario
-let suma = 0; // Variable donde guardaremos la suma
-
-for (let i = 1; i <= n; i++) { // Desde 1 hasta N
-    suma += i; // Sumamos cada número a la variable "suma"
+function determinarSigno(numero) {
+    if (numero > 0) {
+        return "El número es positivo";
+    } else if (numero < 0) {
+        return "El número es negativo";
+    } else {
+        return "El número es cero";
+    }
 }
 
-console.log("La suma de los primeros " + n + " números naturales es: " + suma);
+console.log(determinarSigno(10));  // Salida: "El número es positivo"
+console.log(determinarSigno(-5));  // Salida: "El número es negativo"
+console.log(determinarSigno(0));   // Salida: "El número es cero"

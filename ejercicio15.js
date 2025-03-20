@@ -1,5 +1,13 @@
-let n = parseInt(prompt("Ingrese un número N:")); // Pedimos un número al usuario
+function generarContraseña(n) {
+    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+    let contraseña = "";
 
-for (let i = 1; i <= n; i += 2) { // Empezamos en 1 y aumentamos de 2 en 2
-    console.log(i); // Mostramos el número impar
+    for (let i = 0; i < n; i++) {
+        let indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+        contraseña += caracteres.charAt(indiceAleatorio);
+    }
+
+    return contraseña;
 }
+
+console.log(generarContraseña(10)); 

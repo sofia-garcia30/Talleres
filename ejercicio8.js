@@ -1,3 +1,6 @@
-for (let i = 1; i <= 20; i++) {
-    console.log(i);
+function obtenerPrimeraLetra(nombre) {
+    return nombre.charAt(0);
 }
+
+let resultado = obtenerPrimeraLetra("Carlos");
+console.log(resultado); 

@@ -1,7 +1,13 @@
-let numero = parseInt(prompt("Ingrese un número:")); 
+function esVocal(caracter) {
 
-if (numero % 5 === 0) { 
-   alert(`El número es divisible entre 5`);
-} else {
-    alert(`El número NO es divisible entre 5`);
+    caracter = caracter.toLowerCase();
+
+    let vocales = ['a', 'e', 'i', 'o', 'u'];
+
+    return vocales.includes(caracter);
 }
+
+console.log(esVocal('A')); // True
+console.log(esVocal('e')); // True
+console.log(esVocal('z')); // False
+console.log(esVocal('O')); // True

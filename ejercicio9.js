@@ -1,6 +1,17 @@
-let numero = -100; 
+function contarVocales(cadena) {
+    let contador = 0;
+    let vocales = ['a', 'e', 'i', 'o', 'u'];
 
-while (numero <= 600) { 
-    console.log(numero); 
-    numero++; 
+    cadena = cadena.toLowerCase();
+
+    for (let letra of cadena) {
+        if (vocales.includes(letra)) {
+            contador++;
+        }
+    }
+
+    return contador;
 }
+
+let resultado = contarVocales("Hola Mundo");
+console.log("Cantidad de vocales:", resultado); 
